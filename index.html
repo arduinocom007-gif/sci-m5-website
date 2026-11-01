@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sci-M.5 Knowledge Hub - ศูนย์รวมความรู้วิทยาศาสตร์ระดับชั้นมัธยมศึกษาปีที่ 5 ครอบคลุม ชีววิทยา เคมี ฟิสิกส์ โลกและอวกาศ ทั้งเทอม 1 และเทอม 2 ตามหลักสูตร สสวท.">
+  <meta name="keywords" content="วิทยาศาสตร์ ม.5, ชีววิทยา, เคมี, ฟิสิกส์, โลกดาราศาสตร์, สสวท, วิทย์พลังสิบ, ครูสุชาติ, ข้อสอบวิทยาศาสตร์">
+  <meta name="author" content="สิปปกร ทองไสล, ญาณิดา วารี, ปิยะธิดา วรรณทวี (ห้องวิทย์พลังสิบ)">
+  
+  <title>Sci-M.5 Knowledge Hub | ศูนย์รวมความรู้วิทยาศาสตร์ ม.5</title>
+  
+  <!-- Favicon (Wit & Sip Logo) -->
+  <link rel="icon" type="image/png" href="assets/images/logo-wit-sip.png">
+  <link rel="apple-touch-icon" href="assets/images/logo-wit-sip.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Prompt:wght@400;500;600;700&family=Sarabun:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- KaTeX CSS -->
+  <link rel="stylesheet" href="assets/vendor/katex.min.css">
+  
+  <!-- Custom Modern Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Tailwind CSS Engine -->
+  <script src="assets/vendor/tailwind.js"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+              950: '#0f172a'
+            }
+          },
+          fontFamily: {
+            heading: ['Prompt', 'Kanit', 'sans-serif'],
+            sans: ['Sarabun', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Core Vendor Libraries (100% Offline Capable) -->
+  <script src="assets/vendor/react.production.min.js"></script>
+  <script src="assets/vendor/react-dom.production.min.js"></script>
+  <script src="assets/vendor/katex.min.js"></script>
+  <script src="assets/vendor/confetti.browser.min.js"></script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- React Root Container -->
+  <div id="root">
+    <!-- Initial Loading State (Replaced immediately by React) -->
+    <div class="min-h-screen flex flex-col items-center justify-center p-4 bg-slate-50 dark:bg-slate-900 text-center">
+      <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-cyan-500 flex items-center justify-center text-white shadow-xl shadow-blue-500/30 animate-bounce mb-4">
+        <svg class="w-8 h-8 animate-spin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10" stroke-opacity="0.25"></circle>
+          <path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round"></path>
+        </svg>
+      </div>
+      <h2 class="font-heading font-bold text-xl text-slate-900 dark:text-white mb-1">Sci-M.5 Knowledge Hub</h2>
+      <p class="text-xs text-slate-500 dark:text-slate-400 font-mono">กำลังโหลดคลังความรู้วิทยาศาสตร์ ม.5 ทั้ง 27 บทเรียน...</p>
+    </div>
+  </div>
+
+  <!-- Lesson Data Modules (27 Comprehensive Lessons) -->
+  <script src="js/data/biologyLessons.js"></script>
+  <script src="js/data/chemistryLessons.js"></script>
+  <script src="js/data/physicsLessons.js"></script>
+  <script src="js/data/earthSpaceLessons.js"></script>
+  <script src="js/data/lessonsData.js"></script>
+
+  <!-- Quiz Data Modules (135 Detailed Interactive Questions) -->
+  <script src="js/data/biologyQuizzes.js"></script>
+  <script src="js/data/chemistryQuizzes.js"></script>
+  <script src="js/data/physicsQuizzes.js"></script>
+  <script src="js/data/earthSpaceQuizzes.js"></script>
+  <script src="js/data/quizzesData.js"></script>
+
+  <!-- React Components Modules -->
+  <script src="js/components/Icons.js"></script>
+  <script src="js/components/Navbar.js"></script>
+  <script src="js/components/Hero.js"></script>
+  <script src="js/components/SubjectFilter.js"></script>
+  <script src="js/components/LessonCard.js"></script>
+  <script src="js/components/LessonModal.js"></script>
+  <script src="js/components/QuizActiveModal.js"></script>
+  <script src="js/components/QuizCenter.js"></script>
+  <script src="js/components/ProgressDashboard.js"></script>
+  <script src="js/components/AboutSection.js"></script>
+  <script src="js/components/Footer.js"></script>
+
+  <!-- Main Application Entrypoint -->
+  <script src="js/app.js"></script>
+
+</body>
+</html>

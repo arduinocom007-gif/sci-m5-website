@@ -1,0 +1,23 @@
+{
+  "name": "sci-m5-knowledge-hub",
+  "version": "1.0.0",
+  "description": "ศูนย์รวมความรู้วิทยาศาสตร์ ม.5 สื่อการเรียนรู้วิทยาศาสตร์ห้องเรียนพิเศษวิทยาศาสตร์พลังสิบ",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "serve": "node server.js"
+  },
+  "keywords": [
+    "science",
+    "m5",
+    "biology",
+    "chemistry",
+    "physics",
+    "earth-astronomy-space",
+    "education",
+    "ipst"
+  ],
+  "author": "นักเรียนห้องวิทย์พลังสิบ (สิปปกร ทองไสล, ญาณิดา วารี, ปิยะธิดา วรรณทวี)"
+}
